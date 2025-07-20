@@ -1,0 +1,89 @@
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  color: #333;
+  padding: 30px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+/* Product Container Grid */
+#product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Product Card Styling */
+.product-card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Hover Animation */
+.product-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover img {
+  opacity: 0.9;
+}
+
+/* Product Name */
+.product-card h2 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  text-align: center;
+  color: #222;
+}
+
+/* Price Tag */
+.product-card p {
+  background-color: #0fbf61;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card:hover p {
+  background-color: #0aa94f;
+}
